@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="../src/LogoAlexpng.png">
+    <title>Colors</title>
+</head>
+<body class="flex">
+    <section class="container">
+        <h6>Escoge un rango de color</h6>
+        <div class="containeropc">
+            <div class="color">
+                <label>[R]</label>
+                <input type="range" name="rojo" id="red" min="0" max="255" step="1" value="23">
+                <p id="text-red"></p>
+            </div>
+            <div class="color">
+                <label>[G]</label>
+                <input type="range" name="verde" id="green" min="0" max="255" step="1" value="41">
+                <p id="text-green"></p>
+            </div>
+            <div class="color">
+                <label>[B]</label>
+                <input type="range" name="azul" id="blue" min="0" max="255" step="1" value="56">
+                <p id="text-blue"></p>
+            </div>
+        </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>
