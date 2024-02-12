@@ -20,7 +20,6 @@ function actcronos(){
         //Se reinicia seg
         segundos = 0;
         minutos++;
-        
         if(minutos /60 == 1){
             //Se reinicia min
             minutos = 0;
@@ -65,4 +64,22 @@ buttonPlaypause.addEventListener('click', function(){
         buttonPlaypause.classList.add('iniciar');
         estadoCronos = 'pausado';
     }
+});
+
+/*Funcion para reiniciar cronometro*/
+buttonRestart.addEventListener('click', function(){
+    window.clearInterval(intervaloTime);
+    //Sustituye los valores por cero
+    horas = 0;
+    minutos = 0;
+    segundos = 0;
+   /*Tomamos nuevamente el elemento cronometro para reiniciarlo*/
+   timer.innerText = '00:00:00';
+   //reiniciamos los botones de pausa
+   buttonPlaypause.innerHTML = '<img src="../src/play-icon.png" alt="play">';
+   //Quitamos las clases y las colocamos por defecto
+   buttonPlaypause.classList.remove('pausar');
+   buttonPlaypause.classList.remove('iniciar');
+   //Modifica el estado del cronometro
+   estadoCronos = 'pausado';
 });
