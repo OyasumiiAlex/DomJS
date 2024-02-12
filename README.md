@@ -49,9 +49,17 @@ DOM, incluyendo:
 - ##### 1) Colors Hexadecimal
 <img src="https://github.com/OyasumiiAlex/DomJS/assets/44487342/2c753b00-58a8-4847-9640-4840f064c870.gif" width="400">
 
-- ##### 1) Colors RGB
+- ##### 2) Colors RGB
   
 <img src="https://github.com/OyasumiiAlex/DomJS/assets/44487342/9c14e01f-8464-478a-a4e5-2fc334c07ec3.gif" width="400">
+
+- ##### 3) Citas aleatorias
+
+<img src="https://github.com/OyasumiiAlex/DomJS/assets/44487342/561a1081-d5ac-41ff-860f-da091f0b71d3.gif" width="400">
+
+- ##### 4) Cronómetro
+
+<img src="https://github.com/OyasumiiAlex/DomJS/assets/44487342/bbd2e72a-239a-472a-bb68-0a624bf10954.gif" width="400">
 
 #### Licencia (MIT License)
   
