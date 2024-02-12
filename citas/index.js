@@ -18,5 +18,5 @@ function nextQuo(){
     textCita.innerText = `"${citas[indiceAlea].texto}"`
     textAutor.innerText = citas[indiceAlea].autor;
 }
-
-nextQuo();
+/*Agregando un evento para que el boton llame a la funcion de siguiente cita*/
+boton.addEventListener('click', nextQuo);
