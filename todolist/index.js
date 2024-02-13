@@ -53,10 +53,17 @@ function checkTask(e) {
     tarea.classList.toggle('completada');
 }
 //Definimos cuando se elimina una tarea
-function rmTask(e){
+function rmTask(e) {
     /*Target*/
     let tarea = e.target.parentNode.parentNode;
     //Quitamos la tarea del DOM
     tarea.remove();
 }
+//Eventos de boton y enter
 button.addEventListener('click', agregar);
+input.addEventListener('keydown', (e) => {
+    //Funcion para verificar cual fue la tecla presionada
+    if (e.key === 'Enter') {
+        agregar();
+    }
+});
