@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Zen Dots', Arial, Helvetica, sans-serif;
+}
+body{
+    background-image: url(../src/bgdesktop3.png);
+    object-fit: cover;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 7rem;
+}
+.maincontainer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: auto;
+    height: auto;
+    padding: 1rem;
+    margin: auto;
+    border-radius: 1rem;
+    border: 2px solid #5e606c;
+    background-color: transparent;
+}
+h6{
+    margin: 0.3rem;
+    padding: 0.5rem;
+    font-size: 18px;
+}
+input{
+    width: 23rem;
+    height: 2rem;
+    padding: 0.3rem;
+    margin: auto;
+    margin-bottom: 0.5rem;
+    border: none;
+    border-radius: 1rem;
+    text-align: center;
+}
+button{
+    align-items: center;
+    justify-content: center;
+    width: 6rem;
+    height: 2.5rem;
+    margin: auto;
+    margin-bottom: 0.5rem;
+    padding: 0.3rem;
+    border: none;
+    border-radius: 0.7rem;
+    cursor: pointer;
+    background-color: #ffa0c5;
+}
+button:hover{
+    background-color: #fcedf2;
+}
+.list-tareas{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 25rem;
+    height: auto;
+    margin: auto;
+    padding: 0.5rem;
+}
+.tarea{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 25rem;
+    height: auto;
+    padding: 0.5rem;
+    border: 3px solid #ff6361;
+    border-radius: 1rem;
+    font-size: 15px;
+    text-align: center;
+    background-color: #abc4ff;
+}
+p{
+    padding: 0.3rem;
+    margin-left: 1rem;
+}
+.iconos{
+    padding: 0.1rem;
+    margin: 0.1rem;
+}
+img{
+    margin: 0.2rem;
+    padding: 0.1rem;
+    width: 32px;
+    height: 32px;
+}
+.tarea.completada{
+    border: 3px solid #ffa600;
+}
+
+
