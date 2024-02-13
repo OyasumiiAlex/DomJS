@@ -44,7 +44,6 @@ function agregar() {
         alert('Porfavor ingresa una tarea!');
     }
 }
-
 //Definimos cuando se marca una tarea (recibe un objeto de evento e)
 function checkTask(e) {
     /*target: donde ocurrio el envento (icono) para que se modifique el container*/
@@ -64,6 +63,7 @@ button.addEventListener('click', agregar);
 input.addEventListener('keydown', (e) => {
     //Funcion para verificar cual fue la tecla presionada
     if (e.key === 'Enter') {
+        //Llamamos a la funcion agregar nueva tarea
         agregar();
     }
 });
