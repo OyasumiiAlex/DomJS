@@ -24,11 +24,13 @@ function agregar(){
 
         //Creando los iconos 
         let completar = document.createElement('img');
-        completar.src = '../src/trash-icon.png';
+        completar.src = '../src/check-icon.png';
         completar.classList.add('check-icon');
+        //Agregando el listener para el evento de boton check
+        completar.addEventListener('click', checkTask);
 
         let eliminar = document.createElement('img');
-        eliminar.src= '../src/check-icon.png';
+        eliminar.src= '../src/trash-icon.png';
         eliminar.classList.add('trash-icon');
 
         iconos.append(completar, eliminar);
@@ -41,7 +43,13 @@ function agregar(){
     }
 }
 
-button.addEventListener('click', agregar);
-//Definimos cuando se marca una tarea
-
+//Definimos cuando se marca una tarea (recibe un objeto de evento e)
+function checkTask(e){
+    /*target: donde ocurrio el envento (icono) para que se modifique el container*/
+    let tarea = e.target.parentNode.parentNode; 
+    /*Metodo que permite alternar una clase: Si ya tiene la clase se elimina, si no la agrega*/
+    tarea.classList.toggle('completada');
+}
 //Definimos cuando se elimina una tarea
+
+button.addEventListener('click', agregar);
