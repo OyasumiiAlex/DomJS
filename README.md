@@ -32,7 +32,7 @@ DOM, incluyendo:
 <p>Define la jerarquía y disposición de los elementos en la página, como textos, imágenes y enlaces.</p>
 
 #### Estado del Proyecto
-- <p> En desarrollo </p>
++ Finalizado
 
 > [!IMPORTANT]
 > Antes de ejecutar tome en cuenta
